@@ -55,7 +55,7 @@ const projects = [
     github: "https://github.com/SluchCr7/Country-Search-Api"
   },
 ] 
-const page = () => {
+const Page = () => {
   const [proj, setProj] = useState(projects[0])
 
   const handleprev = () => {
@@ -119,4 +119,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

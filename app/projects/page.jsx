@@ -1,5 +1,4 @@
 'use client'
-import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { motion , AnimatePresence } from "framer-motion"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
@@ -92,7 +91,7 @@ const page = () => {
             <div className='text w-[80%] tracking-[2px] text-white/60'>{proj.text}</div>
             <div className='skill flex items-center gap-4'>
               {proj.stack.map((ele) => 
-                <div className='text-accent'>{ele.name}</div>
+                <div className='text-accent' key={ele}>{ele.name}</div>
                 )}
             </div> 
             <hr />
